@@ -1,0 +1,218 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url('./assets/fonts/Roboto.ttf');
+}
+
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-image: url(./assets/img/desktop-bg-with-overlay.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: linear-gradient(191.67deg, #C80103 0%, #0036CB 99.5%);
+}
+
+body.portal {
+    display: flex;
+    text-align: center;
+    margin: 0;
+    height: 100%;
+    font-family: 'Roboto';
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+    background-color: transparent;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.oper-section-outer {
+    width: 100%;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+}
+
+.oper-section-inner {
+    width: 100%;
+}
+
+.oper-section-item {
+    height: 42px;
+    width: 500px;
+    margin-bottom: 12px;
+    border-radius: 5px;
+}
+
+#input-phone-num {
+    margin-bottom: 12px;
+}
+
+.add {
+    display: inline-block;
+    background-color: #2F2E2A;
+    color: #2F2E2A;
+    border-radius: 5px 0 0 5px;
+    height: 42px;
+    line-height: 40px;
+    width: 20px;
+}
+
+#country-code {
+    height: 42px;
+    width: 40px;
+    border-radius: 0;
+    background-color: #2F2E2A;
+    color: #2F2E2A;
+}
+
+#phone-number {
+    border-radius: 0 5px 5px 0;
+    height: 42px;
+    width: 440px;
+}
+
+#input-verify-code {
+    margin-bottom: 12px;
+}
+
+#verify-code {
+    border-radius: 5px 0 0 5px;
+    height: 42px;
+    width: 400px;
+    vertical-align: top;
+}
+
+#get-code {
+    display: inline-block;
+    height: 42px;
+    width: 100px;
+    border-radius: 0 5px 5px 0;
+    background-color: #2F2E2A;
+    color: #2F2E2A;
+}
+
+.password {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+.input {
+    background: none;
+    outline: none;
+    border: none;
+    border-radius: 5px;
+    background-color: #fff;
+    text-indent: 10px;
+}
+
+.button {
+    background-color: #2F2E2A;
+    color: #2F2E2A;
+    opacity: 1;
+    margin: 0 auto;
+    display: block;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'Roboto';
+    font-size: 15px;
+    line-height: 42px;
+    outline: none;
+    border: none;
+}
+
+#button-buy-voucher {
+    margin-top: 10px;
+}
+
+#button-login {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #fff;
+    font-weight: bold;
+    width: auto;
+    margin-top: -15px;
+    padding: 0 20px 40px 20px;
+    font-size: 1em;
+    background: linear-gradient(101.84deg, #03526E 6.69%, #540279 103.47%);
+    border: 3px solid #51A2CC;
+    letter-spacing: 0.15em;
+    border-radius: 5px;
+
+}
+
+
+@media only screen and (max-width: 1165px) {
+
+    /* For tablets: landscape*/
+    body {
+        background-position: center;
+        background-image: url(./assets/img/tablet-bg-with-overlay.png);
+    }
+
+    #button-login {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+
+    /* For tablets: portrait */
+    body {
+        background-position: center;
+        background-image: url(./assets/img/tablet-bg-with-overlay.png);
+    }
+
+    #button-login {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+
+    /* For mobile phones: */
+    body {
+        background-position: center;
+        background-image: url(./assets/img/mobile-bg-with-overlay.png);
+    }
+
+    .oper-section-item {
+        height: 42px;
+        width: 250px;
+        margin-bottom: 12px;
+        border-radius: 5px;
+    }
+
+    #button-login {
+        margin-top: 120px;
+    }
+}
+
+@media only screen and (max-width: 380px) {
+
+    /* For mobile phones w/ small device */
+    body {
+        background-size: cover;
+        background-position: center;
+        background-image: url(./assets/img/mobile-bg-with-overlay.png);
+    }
+
+    .modal-content {
+        margin: 30% auto 0 auto;
+    }
+}
